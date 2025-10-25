@@ -1,6 +1,6 @@
 # **LiveCodeBench (Custom Setup)**
 
-This repository contains a **customized version of the LiveCodeBench evaluation framework**, tailored for running and debugging smaller open-source code models (e.g., DeepSeek-Coder-1.3B-Instruct) on limited GPU memory systems.
+This repository contains a **customized version of the LiveCodeBench evaluation framework**, tailored for running and debugging smaller open-source code models (e.g., DeepSeek-Coder-1.3B-Instruct) on limited GPU memory systems. The official repository was cloned onto a local system, and the following changes have been made to the source code.
 
 ---
 
@@ -36,3 +36,4 @@ python -m lcb_runner.runner.main \
     --cache_batch_size 1 \
     --n 1 \
     --debug
+
