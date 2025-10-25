@@ -11,7 +11,7 @@ This fork includes modifications for **easier local evaluation** and **fine-grai
 
 ---
 
-## **⚙️ Key Modifications**
+## **Key Modifications**
 
 - **Custom `vllm_runner.py`:**
   - Added `max_model_len=4096`, `gpu_memory_utilization=0.8`.
@@ -24,3 +24,15 @@ This fork includes modifications for **easier local evaluation** and **fine-grai
   - Adjusted `max_tokens` in `SamplingParams` to allow longer completions.
 
 ---
+
+## **Sample Evaluation command**
+
+python -m lcb_runner.runner.main \
+    --model deepseek-ai/deepseek-coder-1.3b-instruct \
+    --scenario codegeneration \
+    --evaluate \
+    --release_version release_v5 \
+    --use_cache \
+    --cache_batch_size 1 \
+    --n 1 \
+    --debug
